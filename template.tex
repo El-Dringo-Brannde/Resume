@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+	    \textbf{Full Stack}\\\textbf{Web Dev},
+        \textbf{Problem}\\\textbf{~~Solving~~},
+        \textbf{Cloud}\\\textbf{Dev},
+        \textbf{~~~~~OOP~~~~~~},
+        \textbf{Mobile}\\\textbf{Dev},
+        \textbf{Dev}\\\textbf{~~Ops~~},
+        \textbf{RESTful}\\\textbf{API\'s}
+    }
+}
+
+% Programming skill bars
+\programming{{PHP / 2},{Java $\textbullet$ C\#  $\textbullet$ C++ / 3}, {HTML5 $\textbullet$ SCSS $\textbullet$ CSS3 / 4}, { Python / 4.5}, {JavaScript $\textbullet$ TypeScript / 5}}
+
+% Frameworks Skills bars
+\frameworks{{ Django $\textbullet$ Flask $\textbullet$ NumPy $\textbullet$ SciPy / 3.5}, { Lambda $\textbullet$ EC2 $\textbullet$ Alexa / 4},{React Native $\textbullet$ Ionic $\textbullet$ Cordova / 4.5}, { Node.JS $\textbullet$ Angular $\textbullet$ ReactJS / 5}}
+
+
+% % Projects text
+% \projects{
+%     \textbf{DecAR} - An augmented reality interior decoration app for Android \\
+%     \textbf{CIS*6320} - An implementation of the Bicubic interpolation algorithm in C++
+%     \textbf{CIS*6650} - A comparative statistical study of SVM kernels, and number of hidden layers in ANN, on 5 UCI datasets
+%     \textbf{CIS*6660} - A data linkage project to integrate Canada's WWI casualties and 1901 Canadian census using an SVM
+%     \textbf{CIS*6650} - A statistical study of spurious correlations, such as correlating beer production with election outcome
+% }
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Brandon Dring} % Your name
+\cvjobtitle{ Software Engineer } % Job
+% title/career
+
+\cvlinkedin{/in/brandon-dring/}
+\cvgithub{El-Dringo-Brannde}
+\cvnumberphone{(541) 510 5034} % Phone number
+\cvsite{El-Dringo-Brannde.github.io} % Personal website
+\cvmail{brandondring31@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+
+\section{Summary}
+    Currently enrolled at Oregon State University, in my senior year of college with an expected graduation of Fall 2018. I’m a Computer Science major with a focus in UI/UX Design and Human Computer Interaction.  I am always looking for the next greatest technology to feed my curiosity for learning new languages and development practices. Favorite fields include mobile, cloud, and web development, along with devops, and data / analytics. 
+\vspace{2mm} 
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2015 - 2018 }
+        {}
+        {  B.S, Computer Science \textnormal{(GPA: 3.85/4.0)}}
+        {\href{http://www.oregonstate.edu/}{Oregon State University}}
+        {}
+        {}
+	\twentyitem
+    	{2013 - 2015}
+		{}
+        {  A.O.T, Transfer \textnormal{(GPA: 3.83/4.0)}}
+        {\href{https://www.pcc.edu/}{Portland Community College}}
+        {}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{June 2017 -}
+		{Present}
+        {Intern}
+        {\href{https://www.cdkglobal.com/}{CDK Global}}
+        {}
+        {\begin{itemize}
+        \item KPI tracking and analysis of product versions and releases. Maintained and refactored the skill searching application to be more testable and modular for future development. Worked on custom ETL tool, debugging and developing to estimate profit/costs of JIRA stories. Developed CDK data and analytics portal. 
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Jan 2017 -}
+		{Sept 2017}
+        {Research Assistant}
+        {\href{http://www.oregonstate.edu}{Oregon State University}}
+        {}
+        {
+        {\begin{itemize}
+        \item Developed base framework for UX research based card IDE, that was a testable and usable code editor. Along with experimental features such as drawing inside the IDE, a terminal, and a full text editor with automatic language detection. Created the testing framework with qUnit and Mocha, which were used in a Travis CI project for any pushes to the repository to make sure all code is tested. 
+    \end{itemize}}
+        }
+        \\
+     \twentyitem
+   		{Oct 2016 -}
+		{June 2017}
+        {Undergraduate Researcher}
+        {\href{http://www.oregonstate.edu/}{Oregon State University}}
+        {}
+        {
+        \begin{itemize}
+        \item Used data visualization to research  what areas of Portland tip best, allowing delivery drivers make the most of their delivery. I built an application that tracked and estimated pizza delivery tips, based on prior delivery data, and gave them estimated costs and profit.
+    \end{itemize}
+    	}
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\section{Projects}
+\begin{twenty} % Environment for a list with descriptions
+
+\twentyitem
+    	{2018}
+		{}
+        {Senior Capstone Project}
+        {}
+        {}
+        {\begin{itemize}
+        \item Using a Amazon Alexa and HTC Vive for data visualization, we replaced the standard keyboard and mouse for using a computer. Instead using voice analysis and virtual reality to see data.
+        \end{itemize}}
+        \\
+
+\twentyitem
+    	{2017}
+		{}
+        {LunchBox}
+        {}
+        {}
+        {\begin{itemize}
+        \item A single page application and mobile app that allows users to find each other for lunch and let them be able to tag along or pick up something to eat. Meant to help interns and new hires meet people.
+        \end{itemize}}
+        \\
+\twentyitem
+    	{2017}
+		{}
+        {Brewster}
+        {}
+        {}
+        {\begin{itemize}
+        \item A cross platform mobile app to keep track of what beers a user has had, and keep track of their ratings, comments, and pictures. That way at the grocery store or a pub, you always get what you want.
+        \end{itemize}}
+\end{twenty}
+\end{document} 
