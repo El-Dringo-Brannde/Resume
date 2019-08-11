@@ -302,7 +302,7 @@
 }
 
 \renewcommand{\subsection}[1]{
-	\par\vspace{.5\parskip}{%
+	\par\vspace{.25\parskip}{%
 		\Large\headingfont\color{headercolor} #1%
 	}
 	\par\vspace{.25\parskip}%
