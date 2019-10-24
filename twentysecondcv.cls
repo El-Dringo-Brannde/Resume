@@ -165,8 +165,8 @@
 }
 
 % Command for printing skill progress bars
-\newcommand\frameworks[1]{ 
-	\renewcommand{\frameworks}{
+\newcommand\technologies[1]{ 
+	\renewcommand{\technologies}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
@@ -268,9 +268,9 @@
 		 \programming
          
         \vspace{4mm}
-        \profilesection{Frameworks}{2cm} 
+        \profilesection{Technologies}{2cm} 
         
-        \frameworks
+        \technologies
       
   \end{textblock}
 }
