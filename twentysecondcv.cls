@@ -199,10 +199,7 @@
 
     %------------------------------------------------
     
-        \vspace{4mm}
     {\Huge\color{pblue}\cvname}
-    
-    \vspace{2mm}
 
     %------------------------------------------------
     
@@ -254,20 +251,14 @@
     \end{tabular}
 
     %------------------------------------------------
-    \vspace{4mm}
     \profilesection{Skills}{4cm}
 
 	\skills
-        
-        %------------------------------------------------
-        
-        \vspace{3mm}
        
 	 {\profilesection{Programming}{1.5cm}}  
 
 		 \programming
          
-        \vspace{4mm}
         \profilesection{Technologies}{2cm} 
         
         \technologies
@@ -305,7 +296,7 @@
 	\par\vspace{.25\parskip}{%
 		\Large\headingfont\color{headercolor} #1%
 	}
-	\par\vspace{.25\parskip}%
+	\par%
 }
 
 \pagestyle{empty}

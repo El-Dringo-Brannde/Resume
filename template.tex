@@ -1,54 +1,44 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Twenty Seconds Resume/CV
-% LaTeX Template
-% Version 1.0 (14/7/16)
-%
-% Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
-% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
-%
-% License:
-% The MIT License (see included LICENSE file)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
 
 % Command for printing skill overview bubbles
 \newcommand\skills{ 
 ~
 	\smartdiagram[bubble diagram]{
-	    \textbf{Full Stack}\\\textbf{Dev},
+	    \textbf{Software}\\\textbf{Engineer},
         \textbf{~~~~Azure~~~~},
         \textbf{~~~~AWS~~~~},
         \textbf{~~Agile~~},
         \textbf{Automation},
         \textbf{Dev}\\\textbf{~~Ops~~},
-        \textbf{Micro}\\\textbf{services}, 
-        \textbf{Security}
+        \textbf{Serverless}
     }
 }
 
 % Programming skill bars
-\programming{{Java $\textbullet$ C\#  $\textbullet$ C++ / 3},{Azure $\textbullet$ AWS / 3.5}, {HTML5 $\textbullet$ SCSS $\textbullet$ CSS3 / 4}, { Python / 4.5}, {JavaScript $\textbullet$ TypeScript / 5}}
+\programming{
+    { PowerShell / 3},
+    { Java $\textbullet$ C\#  $\textbullet$ C++ / 3},
+    { HTML5 $\textbullet$ SCSS $\textbullet$ CSS3 / 4}, 
+    { Python / 4.5 },
+    { JavaScript $\textbullet$ TypeScript / 5}%
+}
 
 % Frameworks Skills bars
-\technologies{{ Django $\textbullet$ Flask $\textbullet$ NumPy $\textbullet$ SciPy / 3.5}, { (Serverless) Lambda $\textbullet$ Functions / 4},{React Native $\textbullet$ Ionic $\textbullet$ Cordova / 4.5}, { Node.JS $\textbullet$ Angular $\textbullet$ ReactJS / 5}}
+\technologies{
+    { Django $\textbullet$ Flask $\textbullet$ NumPy $\textbullet$ SciPy / 3.5}, 
+    { MongoDB $\textbullet$ SQL $\textbullet$ CosmosDB / 3.5}, 
+    { Jenkins $\textbullet$ TravisCI $\textbullet$ DevOps/ 3.5}, 
+    { (Serverless) Lambda $\textbullet$ Functions / 4},
+    {React Native $\textbullet$ Ionic $\textbullet$ Cordova / 4.5}, 
+    { Node.JS $\textbullet$ Angular $\textbullet$ ReactJS / 5}% 
+}
 
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
 %----------------------------------------------------------------------------------------
-% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
-
 \cvname{Brandon Dring} % Your name
 \cvjobtitle{ Software Engineer } % Job
-% title/career
 
 \cvlinkedin{/in/brandon-dring/}
 \cvgithub{El-Dringo-Brannde}
@@ -59,112 +49,166 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
-\makeprofile % Print the sidebar
-
-
-\section{Summary}
-    Full stack web and mobile development engineer. With a background in AWS \& Azure architecture and solutions, paired with security and automation priorities. 
-    \newline \newline 
-    Most expertise with JavaScript of all kinds, and their cross platform mobile frameworks. Followed with Python expertise mostly for application development or automation scripting.
-    \newline \newline
-    Very familiar with scrum and agile methodologies that allow for proper planning and quick iterative development cycles of products. Founded upon an efficient and fast automated DevOps workflow. 
-%----------------------------------------------------------------------------------------
-%	 EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-
-\begin{twenty} % Environment for a list with descriptions
-	\twentyitem
-    	{2015 - 2018 }
-        {}
-        {  B.S, Computer Science \textnormal{(GPA: 3.85/4.0)}}
-        {\href{http://www.oregonstate.edu/}{Oregon State University}}
-        {}
-        {}
-	\twentyitem
-    	{2013 - 2015}
-		{}
-        {  A.O.T, Transfer \textnormal{(GPA: 3.83/4.0)}}
-        {\href{https://www.pcc.edu/}{Portland Community College}}
-        {}
-        {}
-	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
-\end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
-
-\begin{twenty} % Environment for a list with descriptions
-\twentyitem
-    	{Sept 2018 -}
-		{Present}
-        {Rotational Engineer}
-        {\href{https://www.nike.com/}{Nike Inc.}}
-        {}
-        {\begin{itemize}
-        \item Currently rotating across 3 teams in Nike Technology, spending 6 months with each. My first rotation was in Cloud Automation within Corporate Information Security. My second rotation was on the explore team, helping engineer new methods of make and manufacturing for apparel and footwear. The third team is in Azure Engineering, helping Nike teams operationalize Azure properly.
-        \end{itemize}}
-        \\
-
-\twentyitem
-    	{June 2017 -}
-		{Present}
-        {Intern}
-        {\href{https://www.cdkglobal.com/}{CDK Global}}
-        {}
-        {\begin{itemize}
-        \item KPI tracking and analysis of development vs. product versions and releases. Maintained and refactored the skill searching application to be more testable and modular. Worked on custom ETL tool, debugging and developing to estimate profit/costs of JIRA stories. 
-        \end{itemize}}
-        \\
-	\twentyitem
-    	{Jan 2017 -}
-		{Sept 2017}
-        {Research Assistant}
-        {\href{http://www.oregonstate.edu}{Oregon State University}}
-        {}
-        {
-        {\begin{itemize}
-        \item Development of UI/UX research based card IDE. Created testing framework with qUnit and Mocha, which were used with Travis CI to make sure all code is tested, and deployed automatically. 
-    \end{itemize}}
-    	}
-\end{twenty}
-
-\section{Projects}
-\begin{twenty} 
-\twentyitem
+    \makeprofile % Print the sidebar
+    \section{Summary}
+        Full stack web and mobile development engineer. With a background in AWS \& Azure architecture and solutions, paired with security and automation priorities. 
+        \newline \newline 
+        Most expertise with JavaScript of all kinds, and their cross platform mobile frameworks. Followed with Python expertise mostly for application development or automation scripting.
+        \newline \newline
+        Very familiar with scrum and agile methodologies that allow for proper planning and quick iterative development cycles of products. Founded upon an efficient and fast automated DevOps workflow. 
+    %----------------------------------------------------------------------------------------
+    %	 EDUCATION
+    %----------------------------------------------------------------------------------------
+    \section{Education}
+    
+    \begin{twenty} % Environment for a list with descriptions
+    	\twentyitem
+        	{2015 - 2018 }
+            {}
+            {  B.S, Computer Science \textnormal{(GPA: 3.85/4.0)}}
+            {\href{http://www.oregonstate.edu/}{Oregon State University}}
+            {}
+            {}
+    	\twentyitem
+        	{2013 - 2015}
+    		{}
+            { Transfer \textnormal{(GPA: 3.83/4.0)}}
+            {\href{https://www.pcc.edu/}{Portland Community College}}
+            {}
+            {}
+    	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+    \end{twenty}
+    
+    %----------------------------------------------------------------------------------------
+    %	 EXPERIENCE
+    %----------------------------------------------------------------------------------------
+    
+    \section{Experience}
+    
+    \begin{twenty} % Environment for a list with descriptions
+        \twentyitem
+        	{Sept 2018 -}
+    		{Present}
+            {EIC - Rotational Engineer}
+            {\href{https://www.nike.com/}{Nike Inc.}}
+            { \vspace{1mm} Rotating across Nike Technology, in three 6 month assignments. }
+            {
+            \newline
+            {\bf Azure Engineering - Automation Engineer}  
+            \begin{itemize}
+                \item Currently designing a manageable way to edit \& deploy network firewall rules. Using an infrastructure as code, rules are view-able to the entire organization, and automatically deployed upon changes.  Saving the Nike network team endless man hours processing tickets for firewall exceptions, this allows engineers to submit a pull request to make the exact change they need. 
+            \end{itemize}
+            
+            \vspace{3mm}
+            
+            {\bf NXT - Full Stack Engineer} 
+            \vspace{2mm}
+            \begin{itemize}
+                \item Developed an automated process of taking designer artwork and making it print ready. Meeting the exact specifications of the printer, saving about four hours of labor for each design that gets created. The project has since been picked up and being used by the Nike By You (Nike iD) team.
+                \vspace{1mm}
+                \item Designed \& implemented a ReactJS/Mobx website to create a new classified method of making shoes. The website served as a front end to program a manufacturing machine, that used a custom file format. While at the same time abstracting all the technicalities so that more Nike engineers can use the machine. 
+            \end{itemize}
+            
+            \vspace{3mm}
+            {\bf Cloud Information Security - Automation Engineer }
+            \vspace{2mm}
+            \begin{itemize}
+                \item Audited the termination process of Nike Employees, automating a full days worth of work into a minute long Python script. This ensured that Nike employees that had been terminated, had their access revoked in a single day from up to a month to prevent access from any potentially disgruntled employees.
+                \vspace{1mm}
+                
+                \item Automated how Corporate Information Security blacklists/whitelists IP addresses. Unifying to a single source of truth of what IP address ranges are safe or not, making it both easily accessible and maintainable. 
+            
+            \end{itemize}
+            }
+    \end{twenty}
+    \newpage
+    
+    \makeprofile
+    
+    \section{Experience Cont.}
+    \begin{twenty}
+        \twentyitem
+        	{June 2017 -}
+    		{Present}
+            {Intern}
+            {\href{https://www.cdkglobal.com/}{CDK Global}}
+            {}
+            {
+            \begin{itemize}
+                \item Lead a team of interns to develop a full stack KPI dashboard using ReactJS to analyze the development cost/time vs. product defects. Such that leadership can better estimate when a product should be released to minimize bugs \& maximize developer efficiency. Using a custom data pipeline powered by Python and Machine Learning to predict what projects were at risk based off of JIRA data. 
+            \end{itemize}
+            }
+            \\
+    	\twentyitem
+        	{Jan 2017 -}
+    		{Sept 2017}
+            {Research Assistant}
+            {\href{http://www.oregonstate.edu}{Oregon State University}}
+            {}
+            {
+            \begin{itemize}
+                \item Development of UI/UX research based card IDE. Created testing framework with qUnit and Mocha, which were used with Travis CI to make sure all code is tested, and deployed automatically. 
+            \end{itemize}
+            	}
+	\end{twenty}
+    
+    \section{Projects/Start Ups}
+    \begin{twenty} 
+    \twentyitem
     	{2019}
 		{}
         {PredictionStrike}
         {}
         {}
-        {\begin{itemize}
-        \item Building the complete front, back, and automation scripts that power predictionstrike.com. A sports betting website that has transacted over \$300k where we see athletes like stocks and adjust their price with their in game performance. 
-        \vspace{1mm}
-        \end{itemize}}
-
-\twentyitem
+        {
+        \begin{itemize}
+            \item Built the complete frontend, backend, and automation scripts that power predictionstrike.com. A sports betting website that has transacted over \$300k where we see athletes like stocks and adjust their price with their in-game performance. Designed the backend architecture with Azure Functions using NodeJS, the frontend with ReactJS \& NextJS. A custom ETL pipeline to update game data with Python, bundled all with Docker and deployed using Azure Devops in a CI/CD manner. 
+            \vspace{1mm}
+        \end{itemize}
+        }
+    \\
+     \twentyitem
+    	{}
+		{}
+        {The Van}
+        {}
+        {}
+        {
+        \begin{itemize}
+            \item Automated how users are created, and removed for The Van by polling Active Directory, and giving or revoking access accordingly. Turning a week long manual process into a single minute long script, which allowed for a company wide roll out of the website in a single day.  
+            \vspace{1mm}
+            
+            \item Developed the logic that allows ETWs to shop on The Van, growing the customer base by 60\%. Along with the growing day-to-day sales by an average of over 100\% with the new user base. 
+            
+            \vspace{1mm}
+            
+            \item Created automation that enabled The Van to list inventory from another warehouse, and drop ship it to the customer. 
+        \end{itemize}
+        }
+    \\
+    \twentyitem
     	{}
 		{}
         {Middlemen}
         {}
         {}
-        {\begin{itemize}
-        \item A dead simple middleware solution for Azure Functions, similar to express, \& hapiJS. Which allows developers to stop worrying about validation, and token checking, and just worry about implementing business logic.
-        \vspace{1mm}
-        \end{itemize}}
-
-\twentyitem
+        {
+        \begin{itemize}
+            \item To help fight code bloat, I created a dead simple middleware solution for Azure Functions, similar to expressJS. Which allows developers to run middleware to deal with validation, authentication, and authorization, prior to their serverless logic being ran. Downloaded over 600 times. 
+            \vspace{1mm}
+        \end{itemize}
+        }
+    \\
+    \twentyitem
     	{2018}
 		{}
         {Perfected Prototypes}
         {}
         {}
-        {\begin{itemize}
-        \item An extension to the Javascript Object, Array, and String prototype chain. Extending the limited functionality to what it should have been the first time around. 
-        \end{itemize}}
-\end{twenty}
+        {
+        \begin{itemize}
+            \item Frustrated with the lack of type functions as in Python, I created an extension to the JavaScript Object, Array, and String prototype chain. Extending the limited functionality to help alleviate some of the common pitfalls when writing JavaScript. Downloaded over 1.4k times. 
+        \end{itemize}
+        }
+    \end{twenty}
 \end{document} 
